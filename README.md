@@ -1,4 +1,4 @@
-# design-patterns-python
+# design patterns python
 
 ## Table of contents
 
