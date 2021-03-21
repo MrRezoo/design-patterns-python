@@ -7,7 +7,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-### General info
+## General info
 
 Hi , this is [Mr.Rezoo](https://www.rezoo.ir) ; these are the most important
 design patterns
