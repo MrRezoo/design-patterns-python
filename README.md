@@ -8,7 +8,7 @@
 * [General info](#General-info)
 * [Attention](#Attention)
 * [Technologies](#Technologies)
-* [Design Pattern Map](#Design Pattern Map)
+* [Design Pattern Map](#Design-Pattern-Map)
 * [Help](#Help)
 * [Setup](#Setup)
 
