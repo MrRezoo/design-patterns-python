@@ -1,3 +1,7 @@
+"""
+    Structural:
+        Adapter => 1.Adaptee 2.Adapter 3.Client
+"""
 from abstract_factory import Rugs
 
 

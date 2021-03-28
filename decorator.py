@@ -1,3 +1,9 @@
+"""
+    Structural :
+        Decorator
+"""
+
+
 COUNTRIES = ['Iran', 'UAE']
 VAT = {'Iran': 9, 'UAE': 15}
 
