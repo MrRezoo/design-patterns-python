@@ -1,5 +1,5 @@
-from observer.decorator import notify_observers
-from observer.notification import EmailNotification, SMSNotification, \
+from src.observer import notify_observers
+from src.observer import EmailNotification, SMSNotification, \
     PushNotification
 
 

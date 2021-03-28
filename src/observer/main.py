@@ -1,5 +1,4 @@
-from observer.shop import Product, Purchase
-from observer.notification import EmailNotification
+from src.observer.shop import Product, Purchase
 
 if __name__ == '__main__':
     p1 = Product()
