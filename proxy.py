@@ -1,3 +1,8 @@
+"""
+    Structural pattern :
+        Proxy
+"""
+
 COUNTRIES = ['Iran', 'UAE']
 VAT = {'Iran': 9, 'UAE': 15}
 
@@ -7,6 +12,7 @@ def check_permission(func):
         if obj.user == user:
             return func(obj)
         return "You are not allowed to checkout"
+
     return wrapped_func
 
 
