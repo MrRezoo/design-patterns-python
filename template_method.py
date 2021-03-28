@@ -1,3 +1,9 @@
+"""
+    Behavioral pattern:
+        Template method
+    Example:
+        when we have static job between several classes use one ABC class
+"""
 from abc import ABC, abstractmethod
 
 
@@ -46,8 +52,8 @@ class Two(Top):
         print('This is Fourth require from Two...')
 
 
-def client(klass):
-    klass.template_method()
+def client(class_):
+    class_.template_method()
 
 
 if __name__ == '__main__':
