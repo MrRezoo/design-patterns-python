@@ -36,7 +36,8 @@ Project is created with:
 * Python: 3.6^
  
 
-## Design Pattern Map
+## Design Pattern Map 
+
 ![alt Design Patterns Map](assets/img/design-pattern-map.png "Design Patterns Python Map")
 
  
@@ -114,3 +115,8 @@ gh repo clone https://github.com/MrRezoo/design-patterns-python.git
  
 git clone https://github.com/MrRezoo/design-patterns-python.git
 ```
+
+
+## License
+
+Distributed under the MIT License. See [license](LICENSE.txt) for more information.
