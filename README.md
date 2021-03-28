@@ -16,16 +16,16 @@
 
 ## General info
 
-Hi , this is [Mr.Rezoo](https://www.linkedin.com/in/reza-mobaraki/) ; these are the most important
-design patterns
+Hi , this is [Mr.Rezoo](https://www.linkedin.com/in/reza-mobaraki/) 
+
+these are the most important design patterns
 
 you can read and try design patterns with this code
 
  
-
 #### Attention
 
-all design pattern write by 2way
+Some pattern designs are implemented in several ways
 
  
 
