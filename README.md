@@ -10,7 +10,7 @@
 
 ## General info
 
-Hi , this is [Mr.Rezoo](https://www.rezoo.ir) ; these are the most important
+Hi , this is [Mr.Rezoo](https://www.linkedin.com/in/reza-mobaraki/) ; these are the most important
 design patterns
 
 you can read and try design patterns with this code
