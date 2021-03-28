@@ -38,6 +38,8 @@ Project is created with:
 
 ## Design Pattern Map 
 
+This is a good cheat sheet to review and remind the design of important patterns
+
 ![alt Design Patterns Map](assets/img/design-pattern-map.png "Design Patterns Python Map")
 
  
