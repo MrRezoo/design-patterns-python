@@ -1,3 +1,7 @@
+"""
+    Behavioral :
+        Strategy
+"""
 from abc import ABC, abstractmethod
 
 ALLOWED_EXTENSIONS = ["html", 'csv', 'mp3', 'mp4', 'txt']

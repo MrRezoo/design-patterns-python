@@ -1,3 +1,9 @@
+"""
+    Behavioral :
+        Strategy
+"""
+
+
 class Product:
     def __init__(self, name, price):
         self.name = name
