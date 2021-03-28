@@ -1,4 +1,4 @@
-# Design patterns python
+# Design Patterns Python
 ![alt Design Patterns Python](assets/img/design-patterns-python.png "Design Patterns Python")
 ## Table of contents
 
