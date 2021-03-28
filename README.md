@@ -1,7 +1,7 @@
 # Design Patterns Python
 ![alt Design Patterns Python](assets/img/design-patterns-python.png "Design Patterns Python")
 
----
+ 
 
 ## Table of contents
 
@@ -12,7 +12,7 @@
 * [Help](#Help)
 * [Setup](#Setup)
 
----
+ 
 
 ## General info
 
@@ -21,25 +21,25 @@ design patterns
 
 you can read and try design patterns with this code
 
----
+ 
 
 #### Attention
 
 all design pattern write by 2way
 
----
+ 
 
 ## Technologies
 
 Project is created with:
 
 * Python: 3.6^
----
+ 
 
 ## Design Pattern Map
 ![alt Design Patterns Map](assets/img/design-pattern-map.png "Design Patterns Python Map")
 
----
+ 
 
 ## Help
 
@@ -102,7 +102,7 @@ DesignPattern git:(master) tree
 
 3 directories, 40 files
 ```
----
+ 
 ## Setup
 
 To run this project, install it locally using git-clone:
