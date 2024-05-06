@@ -3,7 +3,8 @@
         Singleton
 """
 
-class Singleton(type):
+
+class Singleton1(type):
     _instance = None
 
     def __call__(cls, *args, **kwargs):
@@ -12,7 +13,7 @@ class Singleton(type):
         return cls._instance
 
 
-class Singleton(type):
+class Singleton2(type):
     """
     Singleton metaclass
     Based on Python Cookbook 3rd Edition Recipe 9.13
@@ -20,28 +21,28 @@ class Singleton(type):
     """
 
     def __init__(self, *args, **kw):
-        super(Singleton, self).__init__(*args, **kw)
+        super(Singleton2, self).__init__(*args, **kw)
         self.__instance = None
 
     def __call__(self, *args, **kw):
         if self.__instance is None:
-            self.__instance = super(Singleton, self).__call__(*args, **kw)
+            self.__instance = super(Singleton2, self).__call__(*args, **kw)
         return self.__instance
 
-   
 
-   
-class DB(metaclass=Singleton):
+class DBMongo(metaclass=Singleton2):
+    pass
+
+class DBPostgres(metaclass=Singleton2):
     pass
 
 
 if __name__ == '__main__':
-    s1 = DB()
-    s2 = DB()
-    s3 = DB()
+    m1 = DBMongo()
+    m2 = DBMongo()
 
-    print(id(s1))
-    print(id(s2))
-    print(id(s3))
+    p1 = DBPostgres()
+    p2 = DBPostgres()
 
-    print(id(s1) == id(s2) == id(s3))
+    print(f"Mongo: {id(m1)} - {id(m2)} ", id(m1) == id(m2))
+    print(f"Postgres: {id(p1)} - {id(p2)} ", id(p1) == id(p2))
