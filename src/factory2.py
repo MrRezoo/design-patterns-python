@@ -1,40 +1,54 @@
 """
-    Creational:
-        Factory method
-            3 Component => 1.Creator, 2.Product, 3.Client
+	Factory
+	- Factory is a creational design pattern that provides an interface for creating objects
+	in a superclass, but allows subclasses to alter the type of objects that will be created.
+
+	3 component => 1. creator, 2. product, 3. client
 """
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
 
-class File:
-    def __init__(self, name, file_format):
-        self.name = name
-        self.file_format = file_format
-
-
-class B:
-
-    def edit(self, file):  # client
-        return self._get_edit(file)
-
-    def _get_edit(self, file):  # creator
-        if file.file_format == 'json':  # identifier
-            return self.json_edit(file)
-        elif file.file_format == 'xml':  # identifier
-            return self.xml_edit(file)
-        else:
-            raise ValueError("So Sorry. . .")
+class File(ABC):  # creator
+    def __init__(self, file):
+        self.file = file
 
     @abstractmethod
-    def json_edit(self, file):  # product
-        print(f"Editing Json File. . . {file.name}")
+    def make(self):
+        pass
 
-    @abstractmethod
-    def xml_edit(self, file):  # product
-        print(f"Editing Xml File. . . {file.name}")
+    def call_edit(self):
+        product = self.make()
+        result = product.edit(self.file)
+        return result
 
 
-if __name__ == '__main__':
-    first_file = File('first', 'xml')
-    b1 = B()
-    b1.edit(first_file)
+class JsonFile(File):  # creator
+    def make(self):
+        return Json()
+
+
+class XmlFile(File):  # creator
+    def make(self):
+        return Xml()
+
+
+class Json:  # product
+    def edit(self, file):
+        return f'Working on {file} Json...'
+
+
+class Xml:  # product
+    def edit(self, file):
+        return f'Working on {file} Xml...'
+
+
+def client(file, format):  # client
+    formats = {
+        'json': JsonFile,
+        'xml': XmlFile
+    }
+    result = formats[format](file)
+    return result.call_edit()
+
+
+print(client('show', 'xml'))
